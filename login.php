@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form  method = "POST">
+    <form  method = "POST" action = "index.php">
 
         Username : <input type="text" name ="username"> </input>
         Password : <input type="text" name = "password"> </input>
@@ -16,16 +16,7 @@
     
     </form>
 
-    <?php
-    if(isset($_POST['submit'])){
-        if(($_POST['username'] == 'admin') && ($_POST['password'] == 'abc123') ){
-            header("Location: index.php");
-        }
-        else{
-            die("incorrect username or password!");
-        }
-    }
-    ?>
+    
 </body>
 </html>
 
